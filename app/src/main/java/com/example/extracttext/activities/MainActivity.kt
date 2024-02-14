@@ -34,12 +34,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.editBtn.setOnClickListener {
-            binding.extractedText.editText!!.setText("")
+            binding.extractedText.setText("")
         }
 
         binding.copyBtn.setOnClickListener {
             val clipBoard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-            val clip = ClipData.newPlainText("", binding.extractedText.editText!!.text.toString())
+            val clip = ClipData.newPlainText("", binding.extractedText.text.toString())
             clipBoard.setPrimaryClip(clip)
             Toast.makeText(this@MainActivity, "Copied to clipboard", Toast.LENGTH_SHORT).show()
         }
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
         recognizerLatin.process(image)
             .addOnSuccessListener {
-                binding.extractedText.editText!!.setText(it.text)
+                binding.extractedText.setText(it.text)
             }
 //        recognizerDevanagari.process(image)
 //            .addOnSuccessListener {
