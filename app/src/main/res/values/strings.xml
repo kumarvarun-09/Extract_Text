@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Extract Text</string>
+    <string name="extract_text">Extract Text</string>
+    <string name="extracted_text_will_be_shown_here">Extracted text will be shown here</string>
+</resources>
