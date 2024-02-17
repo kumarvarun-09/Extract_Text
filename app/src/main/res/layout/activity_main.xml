@@ -19,13 +19,32 @@
             android:id="@+id/extractedText"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="@string/extracted_text_will_be_shown_here"
+            android:layout_marginTop="150dp"
+
             android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:hint="@string/extracted_text_will_be_shown_here"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/selectLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_script"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@id/extractedText" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selectLanguage" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -54,7 +73,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/baseline_edit_24"
+            android:src="@drawable/baseline_clear_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/cameraBtn"
             app:layout_constraintStart_toStartOf="parent"

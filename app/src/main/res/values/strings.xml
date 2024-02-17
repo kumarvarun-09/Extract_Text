@@ -2,4 +2,15 @@
     <string name="app_name">Extract Text</string>
     <string name="extract_text">Extract Text</string>
     <string name="extracted_text_will_be_shown_here">Extracted text will be shown here</string>
+    <string name="select_script">Select Script:</string>
+
+    <string name="selected_script">Selected script:</string>
+
+    <string-array name="Scripts">
+        <item>Devanagari</item>
+        <item>Latin</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+    </string-array>
 </resources>

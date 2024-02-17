@@ -47,10 +47,20 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
     // To recognize Latin script
     implementation("com.google.mlkit:text-recognition:16.0.0")
 
+    // To recognize Chinese script
+    implementation("com.google.mlkit:text-recognition-chinese:16.0.0")
+
     // To recognize Devanagari script
     implementation("com.google.mlkit:text-recognition-devanagari:16.0.0")
+
+    // To recognize Japanese script
+    implementation("com.google.mlkit:text-recognition-japanese:16.0.0")
+
+    // To recognize Korean script
+    implementation("com.google.mlkit:text-recognition-korean:16.0.0")
 
 }
